@@ -1,0 +1,29 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; font-family: 맑은 고딕; box-sizing: border-box;}
+
+#wrap{width: 1020px; height: auto; margin: 0 auto; padding-top: 100px;}
+
+.photo{width: 430px; height: 430px; float: left;}
+.photo img{width: 100%;}
+
+.selling{width: 530px; height: 430px; float: right;}
+.selling h1{font-size: 24px; margin-bottom: 10px;}
+.selling .intro{font-size: 12px; color: gray; margin-bottom: 20px;}
+.selling .price{font-size: 24px; font-weight: bold; margin-bottom: 30px;}
+.selling .amount{width: 110px; height: 30px; margin: 20px 0; float: right; box-sizing: content-box; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;}
+.selling .amount input[type="text"]{width: 40px; line-height: 30px; text-align: center; border: none; }
+.selling .amount input[type="button"]{width: 35px;  line-height: 30px; text-align: center;border: none;}
+.selling .amount input[value="+"]{float: left; background-color: white;}
+.selling .amount input[value="-"]{float: right; background-color: white;}
+.selling .total{font-size: 16px; clear: both; text-align: right; border-top: 1px solid #eee; margin: 20px 0; padding: 30px 0;}
+.selling .total span{color: lightpink; font-size: 24px; font-weight: bold;}
+.selling button{width: 260px; height: 55px; margin: 30px 0; border-radius: 5px; font-size: 16px;}
+.selling .cart{color: lightpink; background-color: white; border: 1px solid lightpink; float: left;}
+.selling .buy{color: white; background-color: lightpink; border: none; float: right;}
+
+#detail{clear: both; padding: 100px 0;}
+.bar{width: 1020px; height: 60px; line-height: 30px;}
+.bar button{width: 170px; height: 60px; background-color: #eee; color: #333; border: 1px solid darkgray; font-size: 16px; font-weight: bold;}
+.bar button:not(:first-of-type){margin-left: -7px;}
+.bar button:nth-child(1){background-color: #fff; border-bottom: none; color: lightpink;}
+.information{width: 860px; height: 7210px; margin: 0 auto; padding: 100px 0;}
