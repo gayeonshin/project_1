@@ -1,36 +1,37 @@
 @charset "utf-8";
 
-*{margin: 0; padding: 0; font-family: 맑은 고딕; box-sizing: border-box;}
-ul,li,ol{list-style: none;}
-a {text-decoration: none; color: #333;}
-
 #slider{width: 1170px; height: 770px; margin: 0 auto; }
 #slider img{width: 1170px; height: 630px;}
+#slider img:hover{opacity: 0.8;}
 #slider>div{width: 380px; height: 60px; float: left; margin-top: 25px;}
 #slider .concept1{background-color: mistyrose; line-height: 60px;}
 #slider .concept2{background-color: bisque; margin-left:15px ;padding: 9px 0;}
 #slider .concept3{background-color: lightyellow; margin-left:15px ;padding: 9px 0;}
 #slider p{text-align: center;}
 
-section{width: 100%; height: 4710px; margin: 0 auto; position: relative;}
+section{width: 100%; margin: 0 auto; position: relative;}
 .bottombox{width: 100%; height: 400px; background-color: mistyrose; position: absolute; top: 190px; left: 0; z-index: -1;}
 #category{width: 1170px; height: 590px; margin: 0 auto;}
 
 #category h3{text-align: center; padding: 40px 0; font-weight: normal; font-size: 24px;}
 #category div{width: 270px; height: 370px;  float: left;}
 #category .family, #category .hair, #category .body{margin-left: 30px;}
+#category .baby img:hover, #category .family img:hover, #category .hair img:hover, #category .body img:hover{opacity: 0.8;}
 #category div>p{font-size: 20px; margin: 10px 0;}
 
 #brand{width: 1170px; height: 640px; margin: 0 auto;}
 #brand .tree{width: 520px; height: 430px; float: left; margin: 100px 0; }
 #brand .tree img{width: 100%;box-shadow: 50px -50px #ddd;}
+#brand .tree img:hover{opacity: 0.8;}
 #brand .shop{float: right; margin: 150px 100px 0 100px;}
 #brand .shop>h2{font-size: 40px; padding-bottom: 10px; font-weight: normal;}
 #brand .shop>p{font-size: 20px; padding-bottom: 30px;}
-#brand .shop>button{width: 137px; height: 48px; background-color: black; color: white;}
+#brand .shop>button{width: 137px; height: 48px; background-color: black; color: white; border: none;}
+#brand .shop>button:hover{background-color: rgb(247, 149, 164); cursor: pointer;}
 
 #product{width: 100%; height: 440px; margin: 0 auto;}
 #product .hairbody{width: 34%; height: 440px; background-color: mistyrose; float: left; text-align: center;}
+#product .hairbody:hover, #product .perfume:hover, #product .handcream:hover{opacity: 0.8;}
 #product .hairbody h3{font-size: 25px; margin-top: 30px; font-weight: normal; font-size: 24px;}
 #product .hairbody img{width: 100px; height: 245px; margin: 30px;}
 #product .hairbody p{margin-bottom: 10px;}
@@ -49,6 +50,7 @@ section{width: 100%; height: 4710px; margin: 0 auto; position: relative;}
 #popular div>img{width: 230px; height: 320px;}
 #popular div>p{font-size: 14px; margin: 5px 0;}
 #popular div>button{width: 141px; height: 44px; background-color: lightpink; color: white; border: none;}
+#popular div>button:hover{background-color: black; cursor: pointer;}
 #popular .box1{margin: 0 50px 30px 50px;}
 #popular .box2{margin: 0 50px 30px 0;}
 #popular .box3{margin: 0 50px 30px 0;}
@@ -59,27 +61,29 @@ section{width: 100%; height: 4710px; margin: 0 auto; position: relative;}
 #popular .box8{margin: 0 50px 30px 0;}
 
 #banner{width: 100%; height: 575px; margin: 0 auto;}
+#banner img:hover{opacity: 0.8;}
 
 #news{width: 1170px; height: 705px; padding-top: 50px; margin: 0 auto;}
 #news>h3{text-align: center; margin-bottom: 30px; font-weight: normal; font-size: 24px;}
 #news img{width: 565px; height: 380px;}
 #news p{line-height: 30px;}
 #news .oliveyoung{width: 565px; float: left; margin: 0 20px 0 0; position: relative;}
-#news .news1{width: 520px; height: 200px; background-color: #eee; position: absolute; bottom: -100px; right: 0; padding: 30px;}
-.big1{font-size: 20px;}
-.small1{font-size: 13px; margin: 10px 0;}
+#news .oliveyoung img:hover, #news .emart img:hover{opacity: 0.8;}
+#news .news{width: 520px; height: 200px; background-color: #eee; position: absolute; bottom: -100px; right: 0; padding: 30px;}
+.big{font-size: 20px; font-weight: bold;}
+.small{font-size: 13px; margin: 10px 0;}
 #news .emart{width: 565px; float: right; margin: 0 0 0 20px; position: relative;}
-#news .news2{width: 520px; height: 200px; background-color: #eee; position: absolute; bottom: -100px; right: 0; padding: 30px;}
-.big2{font-size: 20px;}
-.small2{font-size: 13px; margin: 10px 0;}
+
 
 #newsletter{width: 1200px; height: 147px; background-color: mistyrose; margin: 0 auto; padding: 20px 30px;}
 .delivery{float: right; position: relative; width: 610px; height: 105px;}
 #newsletter h3{display: inline-block; font-weight: normal; font-size: 24px;}
 #newsletter .delivery input{width: 610px; height: 50px; vertical-align: top; border: none; padding: 10px;}
-.delivery>button{margin-top:5px; position: absolute; bottom: 0; right: 0; width: 140px; height: 45px; background-color: black; color: white;}
+.delivery>button{margin-top:5px; position: absolute; bottom: 0; right: 0; width: 140px; height: 45px; background-color: black; color: white; border: none;}
+.delivery>button:hover{background-color: rgb(247, 149, 164); cursor: pointer;}
 
-#instagram{width: 100%; height: 440px; margin: 0 auto;}
+#instagram{width: 100%; height: 412px; margin: 0 auto;}
 #instagram h3{text-align: center; padding: 30px; font-weight: normal; font-size: 24px;}
 #instagram div img{width: 16.66666%; height: 320px; float: left;}
+#instagram div img:hover{opacity: 0.8;}
 

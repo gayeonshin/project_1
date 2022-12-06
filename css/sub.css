@@ -1,10 +1,10 @@
 @charset "utf-8";
-*{margin: 0; padding: 0; font-family: 맑은 고딕; box-sizing: border-box;}
 
 #wrap{width: 1020px; height: auto; margin: 0 auto; padding-top: 100px;}
 
 .photo{width: 430px; height: 430px; float: left;}
 .photo img{width: 100%;}
+.photo img:hover{opacity: 0.8;}
 
 .selling{width: 530px; height: 430px; float: right;}
 .selling h1{font-size: 24px; margin-bottom: 10px;}
@@ -13,17 +13,60 @@
 .selling .amount{width: 110px; height: 30px; margin: 20px 0; float: right; box-sizing: content-box; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;}
 .selling .amount input[type="text"]{width: 40px; line-height: 30px; text-align: center; border: none; }
 .selling .amount input[type="button"]{width: 35px;  line-height: 30px; text-align: center;border: none;}
-.selling .amount input[value="+"]{float: left; background-color: white;}
-.selling .amount input[value="-"]{float: right; background-color: white;}
+.selling .amount input[value="+"]{float: left; background-color: white; cursor: pointer;}
+.selling .amount input[value="-"]{float: right; background-color: white; cursor: pointer;}
 .selling .total{font-size: 16px; clear: both; text-align: right; border-top: 1px solid #eee; margin: 20px 0; padding: 30px 0;}
-.selling .total span{color: lightpink; font-size: 24px; font-weight: bold;}
+.selling .total span{color: rgb(247, 149, 164); font-size: 24px; font-weight: bold;}
 .selling button{width: 260px; height: 55px; margin: 30px 0; border-radius: 5px; font-size: 16px;}
-.selling .cart{color: lightpink; background-color: white; border: 1px solid lightpink; float: left;}
-.selling .buy{color: white; background-color: lightpink; border: none; float: right;}
+.selling .cart{color: rgb(247, 149, 164); background-color: white; border: 1px solid rgb(247, 149, 164); float: left;}
+.selling .cart:hover{cursor: pointer; color: black; border: 1px solid black;}
+.selling .buy{color: white; background-color: rgb(247, 149, 164); border: none; float: right;}
+.selling .buy:hover{cursor: pointer; background-color: black;}
 
-#detail{clear: both; padding: 100px 0;}
-.bar{width: 1020px; height: 60px; line-height: 30px;}
-.bar button{width: 170px; height: 60px; background-color: #eee; color: #333; border: 1px solid darkgray; font-size: 16px; font-weight: bold;}
-.bar button:not(:first-of-type){margin-left: -7px;}
-.bar button:nth-child(1){background-color: #fff; border-bottom: none; color: lightpink;}
-.information{width: 860px; height: 7210px; margin: 0 auto; padding: 100px 0;}
+#comment{clear: both; padding: 100px 0;}
+#wrap .tabmenu{width: 1020px; height: 60px; line-height: 60px; border-bottom: 1px solid darkgray;}
+#wrap .tabmenu li{float: left; width: 170px; height: 60px; background-color: #fff; border: 1px solid darkgray; font-size: 16px; font-weight: bold; text-align: center;}
+#comment>ul>li:nth-child(1) a{background-color: #fff; color: rgb(247, 149, 164);}
+#wrap .tabmenu li:hover a{color: rgb(247, 149, 164);}
+
+#comment_tablebox{width: 860px; height: 7210px; margin: 0 auto; padding: 100px 0;}
+
+#review{clear: both; padding: 50px 0;}
+#review>ul>li:nth-child(2) a{background-color: #fff; color: rgb(247, 149, 164);}
+
+#review_tablebox>button{width: 140px; height: 45px; background-color: rgb(247, 149, 164); color: #fff; border: none; float: right; margin: 20px 0;}
+#review_tablebox>button:hover{cursor: pointer; background-color: black;}
+#review_tablebox table{ margin: 0 auto; border-top: 1px solid #333; line-height: 50px; width: 1020px; font-size: 13px; color: #333;}
+#review_tablebox table th{width: 60px; border-bottom: 1px solid #eee; color: #333;}
+#review_tablebox table td:first-of-type{width: 680px; border-bottom: 1px solid #eee;}
+#review_tablebox table td:first-of-type>a{color: #333;}
+#review_tablebox table td:nth-of-type(2){width: 60px; text-align: center; border-bottom: 1px solid #eee;}
+#review_tablebox table td:nth-of-type(3){width: 100px; text-align: center; border-bottom: 1px solid #eee;}
+#review_tablebox table td:last-of-type{width: 120px; text-align: center; border-bottom: 1px solid #eee;}
+
+#shipping{clear: both; padding: 50px 0;}
+#shipping>ul>li:nth-child(3) a{background-color: #fff; color: rgb(247, 149, 164);}
+
+#shipping_tablebox h2{padding: 30px 10px; color: #333;}
+#shipping_tablebox{width: 1020px; height: auto;}
+#shipping_tablebox>ul{display: inline-block; width: 1020px; padding-left: 40px;}
+#shipping_tablebox>ul>li{font-size: 14px; color: #666; padding: 10px 0; list-style: disc;}
+
+#inquiry{clear: both; padding: 50px 0;}
+#inquiry>ul>li:nth-child(4) a{background-color: #fff; color: rgb(247, 149, 164);}
+
+#inquiry_tablebox h2{padding: 30px 10px 10px 10px; color: #333;}
+#inquiry_tablebox h4{color: #333; padding: 20px 10px;}
+#inquiry_tablebox{width: 1020px; height: auto;}
+#inquiry_tablebox>ul{display: inline-block; width: 1020px; padding-left: 40px;}
+#inquiry_tablebox>ul>li{font-size: 14px; color: #666; padding: 10px; list-style: disc;}
+#inquiry_tablebox>p{padding-left: 40px; font-size: 14px; color: #666;}
+
+#detail{clear: both; padding: 50px 0;}
+#detail>ul>li:nth-child(5) a{background-color: #fff; color: rgb(247, 149, 164);}
+
+#detail_tablebox{width: 100%; height: auto; margin: 0 auto;}
+#detail_tablebox h2{padding: 20px 10px; color: #333;}
+#detail_tablebox>table{display: block; margin: 10px 0 0 0; line-height: 30px;border-collapse: collapse;}
+#detail_tablebox th{font-size: 14px; text-align: left; width: 200px; padding: 10px;  border: 1px solid #333;}
+#detail_tablebox td{font-size: 14px; text-align: left; width: 700px; padding: 10px;  border: 1px solid #333;}
